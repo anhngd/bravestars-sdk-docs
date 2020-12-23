@@ -1,29 +1,124 @@
 ---
 id: doc1
-title: Latin-ish
-sidebar_label: Example Page
+title: Quy tắc làm việc trên kho mã nguồn
+sidebar_label: Git flow
 ---
 
-Check the [documentation](https://docusaurus.io) for how to use Docusaurus.
+## Mục đích
 
-## Lorem
+Tài liệu này nhằm tạo ra các quy tắc làm việc trên kho mã nguồn trong quá trình cộng tác giữa các thành viên trong Team
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum massa eget nulla aliquet sagittis. Proin odio tortor, vulputate ut odio in, ultrices ultricies augue. Cras ornare ultrices lorem malesuada iaculis. Etiam sit amet libero tempor, pulvinar mauris sed, sollicitudin sapien.
 
-## Mauris In Code
+## Trước khi làm việc
+* Central Repository đã được tạo trên Gitlab.
+* Branch mặc định của Central Repository là master.
+* Các thành viên có thể fork đối với Central Repository.
+
+## Thuật ngữ
+|Thuật ngữ| Ý nghĩa |
+|---|---|
+|Central Repository | Kho code chính của dự án |
+|Forked Repository | Được fork từ kho code chính, là kho code làm việc chính của mỗi thành viên|
+
+## Một số quy tắc
+
+* Không hạn chế số lượng commit với mỗi một pull-request.
+* Mỗi Pull-request tương ứng với một issue/task.
+* Tiêu đề của Pull-request phải đặt tương ứng với **title** của task với format `refs [Loại issue] #[Số issue] [Nội dung issue]` （Ví dụ: `refs bug #8888 Sửa lỗi 111222`）.
+* Đối với commit, trong trường hợp pull-request đó chỉ có 1 commit thì có thể đặt tiêu đề commit tương tự như trên là `refs [Loại issue] #[Số issue] [Nội dung issue]` （Ví dụ: `refs bug #8888 Sửa lỗi 111222`）.\
+  Tuy nhiên với trường hợp 1 pull-request có chứa nhiều commit thì cần phải ghi rõ trong nội dung Tiêu đề commit là trong commit đó xử lý đối ứng vấn đề gì.
+    * Ví dụ:
+        1. Tiêu đề Pull-request: `refs bug #8888 Sửa lỗi cache`
+        2. Trong trường hợp pull-request có 2 commit thì nội dung tiêu đề commit của 2 commit sẽ tương ứng như sau
+            * `Tạo method thực hiện việc clear cache trong Model`
+            * `Tại controller gọi method ở Model để thực hiện việc clear cache`
+* Tại Local Repository (trên máy làm việc của Developer): Mỗi developer phải thao tác trên Branch riêng để thực hiện task. **Tuyệt đối không được thay đổi** code khi ở nhánh master.
+
+## Bắt đầu làm việc
+
+0. Cấu hình thông tin của git tại môi trường làm việc cá nhân
+
+```sh
+git config --global user.name "Anh Nguyen"
+git config --global user.email anhnd@bravestars.com
+```
+
+1. Trên [https://git.bravestars.com](https://git.bravestars.com), fork Central Repository về tài khoản của cá nhân (được gọi là Forked Repository）.
+
+2. Clone (tạo bản sao) Forked Repository lên môi trường local. Tại thời điểm này, Forked Repository sẽ được tự động đăng ký dưới tên là `origin`.
+    ```sh
+    $ git clone [URL của Forked Repository]
+    ```
+
+3. Truy cập vào thư mục đã được tạo ra sau khi clone, đăng ký Central Repository dưới tên `upstream`.
+    ```sh
+    $ cd [thư mục được tạo ra]
+    $ git remote add upstream [URL của Central Repository]
+    ```
+
+## Các thao tác xử lý trên kho mã nguồn
+
+**Chú ý:** Central Repository và Forked Repository sẽ được gọi tương ứng là `upstream` và `origin`.
+
+1. Đồng bộ hóa branch master tại local với upstream.
+    ```sh
+    $ git checkout master
+    $ git pull upstream master
+    ```
+
+2. Tạo branch để làm task từ branch master ở local. Tên branch là số issue của task（Ví dụ: `task/1234`）.
+    ```sh
+    $ git checkout master
+    $ git checkout -b task/1234
+    ```
+
+3. Tiến hành làm task（Có thể commit bao nhiêu tùy ý）.
+
+4. Push code lên origin.
+
+    ```sh
+    $ git push origin task/1234
+    ```
+
+5. Tại origin trên Gitlab、từ branch `task/1234` đã được push lên hãy gửi pull-request đối với branch `master` của `upstream`.
+   
+6. Quay trở lại 1.
+
+### Xử lý conflict xảy ra trong quá trình rebase
+
+Khi xảy ra conflict trong quá trình rebase, sẽ có hiển thị như dưới đây (tại thời điểm này sẽ bị tự động chuyển về một branch vô danh)
+```sh
+$ git rebase master
+First, rewinding head to replay your work on top of it...
+Applying: refs #1234 Sửa lỗi cache
+Using index info to reconstruct a base tree...
+Falling back to patching base and 3-way merge...
+Auto-merging path/to/conflicting/file
+CONFLICT (add/add): Merge conflict in path/to/conflicting/file
+Failed to merge in the changes.
+Patch failed at 0001 refs #1234 Sửa lỗi cache
+The copy of the patch that failed is found in:
+    /path/to/working/dir/.git/rebase-apply/patch
+
+When you have resolved this problem, run "git rebase --continue".
+If you prefer to skip this patch, run "git rebase --skip" instead.
+To check out the original branch and stop rebasing, run "git rebase --abort".
+```
+
+1. Hãy thực hiện fix lỗi conflict thủ công（những phần được bao bởi <<< và >>> ）.
+Trong trường hợp muốn dừng việc rebase lại, hãy dùng lệnh `git rebase --abort`.
+
+2. Khi đã giải quyết được tất cả các conflict, tiếp tục thực hiện việc rebase bằng:
+
+    ```sh
+    $ git add .
+    $ git rebase --continue
+    ```
+
+### Một số câu lệnh git hay dùng
+
+#### Xóa một nhánh
 
 ```
-Mauris vestibulum ullamcorper nibh, ut semper purus pulvinar ut. Donec volutpat orci sit amet mauris malesuada, non pulvinar augue aliquam. Vestibulum ultricies at urna ut suscipit. Morbi iaculis, erat at imperdiet semper, ipsum nulla sodales erat, eget tincidunt justo dui quis justo. Pellentesque dictum bibendum diam at aliquet. Sed pulvinar, dolor quis finibus ornare, eros odio facilisis erat, eu rhoncus nunc dui sed ex. Nunc gravida dui massa, sed ornare arcu tincidunt sit amet. Maecenas efficitur sapien neque, a laoreet libero feugiat ut.
+git branch -d [Tên branch]
 ```
-
-## Nulla
-
-Nulla facilisi. Maecenas sodales nec purus eget posuere. Sed sapien quam, pretium a risus in, porttitor dapibus erat. Sed sit amet fringilla ipsum, eget iaculis augue. Integer sollicitudin tortor quis ultricies aliquam. Suspendisse fringilla nunc in tellus cursus, at placerat tellus scelerisque. Sed tempus elit a sollicitudin rhoncus. Nulla facilisi. Morbi nec dolor dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras et aliquet lectus. Pellentesque sit amet eros nisi. Quisque ac sapien in sapien congue accumsan. Nullam in posuere ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin lacinia leo a nibh fringilla pharetra.
-
-## Orci
-
-Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin venenatis lectus dui, vel ultrices ante bibendum hendrerit. Aenean egestas feugiat dui id hendrerit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur in tellus laoreet, eleifend nunc id, viverra leo. Proin vulputate non dolor vel vulputate. Curabitur pretium lobortis felis, sit amet finibus lorem suscipit ut. Sed non mollis risus. Duis sagittis, mi in euismod tincidunt, nunc mauris vestibulum urna, at euismod est elit quis erat. Phasellus accumsan vitae neque eu placerat. In elementum arcu nec tellus imperdiet, eget maximus nulla sodales. Curabitur eu sapien eget nisl sodales fermentum.
-
-## Phasellus
-
-Phasellus pulvinar ex id commodo imperdiet. Praesent odio nibh, sollicitudin sit amet faucibus id, placerat at metus. Donec vitae eros vitae tortor hendrerit finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque vitae purus dolor. Duis suscipit ac nulla et finibus. Phasellus ac sem sed dui dictum gravida. Phasellus eleifend vestibulum facilisis. Integer pharetra nec enim vitae mattis. Duis auctor, lectus quis condimentum bibendum, nunc dolor aliquam massa, id bibendum orci velit quis magna. Ut volutpat nulla nunc, sed interdum magna condimentum non. Sed urna metus, scelerisque vitae consectetur a, feugiat quis magna. Donec dignissim ornare nisl, eget tempor risus malesuada quis.
