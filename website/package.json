@@ -1,6 +1,7 @@
 {
   "scripts": {
     "examples": "docusaurus-examples",
+    "dev": "docusaurus-build && docusaurus-start",
     "start": "docusaurus-start",
     "build": "docusaurus-build",
     "publish-gh-pages": "docusaurus-publish",

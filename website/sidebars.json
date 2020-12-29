@@ -1,8 +1,6 @@
 {
   "docs": {
-    "Docusaurus": ["doc1"],
-    "First Category": ["doc2"],
-    "Second Category": ["doc3"]
+    "First Category": ["doc1", "open-api-sdk/get-started", "git/git-flow"]
   },
   "docs-other": {
     "First Category": ["doc4", "doc5"]
