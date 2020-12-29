@@ -1,5 +1,5 @@
 ---
-id: doc1
+id: git-flow
 title: Quy tắc làm việc trên kho mã nguồn
 sidebar_label: Git flow
 ---

@@ -1,7 +1,7 @@
 ---
 id: doc1
-title: Quy tắc làm việc trên kho mã nguồn
-sidebar_label: 1 
+title: Quy tắc làm việc trên kho mã nguồn git
+sidebar_label: Quy tắc làm việc trên kho mã nguồn git 
 ---
 
 ## Mục đích
