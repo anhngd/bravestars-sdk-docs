@@ -6,3 +6,7 @@
 - Chạy website: **/website**
 
 Chi tiết [Xem](https://git.bravestars.com/system/docs/-/blob/master/website/README.md)
+
+## Tài liệu
+
+- [https://docusaurus.io/](https://docusaurus.io/)
