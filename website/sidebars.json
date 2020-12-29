@@ -1,8 +1,8 @@
 {
   "docs": {
-    "First Category": ["doc1", "open-api-sdk/get-started", "git/git-flow"]
+    "SDK": ["sdk/get-started"]
   },
   "docs-other": {
-    "First Category": ["doc4", "doc5"]
+    "Git": ["git/git-flo"]
   }
 }
