@@ -1,13 +1,16 @@
 ---
 id: doc1
 title: Quy tắc làm việc trên kho mã nguồn
-sidebar_label: Git flow
+sidebar_label: 1 
 ---
 
 ## Mục đích
 
 Tài liệu này nhằm tạo ra các quy tắc làm việc trên kho mã nguồn trong quá trình cộng tác giữa các thành viên trong Team
 
+Áp dụng quy tắc này giúp:
+- Các thành viên  có thể độc lập quản lý kho code cá nhân.
+- Hạn chế tối đa các conflict khi làm việc trên kho mã nguồn.
 
 ## Trước khi làm việc
 * Central Repository đã được tạo trên Gitlab.
@@ -18,7 +21,7 @@ Tài liệu này nhằm tạo ra các quy tắc làm việc trên kho mã nguồ
 |Thuật ngữ| Ý nghĩa |
 |---|---|
 |Central Repository | Kho code chính của dự án |
-|Forked Repository | Được fork từ kho code chính, là kho code làm việc chính của mỗi thành viên|
+|Forked Repository | Được fork từ kho code chính, là kho code làm việc chính của mỗi thành viên |
 
 ## Một số quy tắc
 
