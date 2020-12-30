@@ -18,11 +18,19 @@ const users = [
     infoLink: 'https://www.facebook.com',
     pinned: true,
   },
+  {
+    caption: 'User1',
+    // You will need to prepend the image path with your baseUrl
+    // if it is not '/', like: '/test-site/img/image.jpg'.
+    image: '/img/undraw_open_source.svg',
+    infoLink: 'https://www.facebook.com',
+    pinned: true,
+  },
 ];
 
 const siteConfig = {
-  title: 'Documentation', // Title for your website.
-  tagline: 'Documentation',
+  title: 'Docs', // Title for your website.
+  tagline: 'Docs',
   url: 'https://docs.bravestars.com', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -30,7 +38,7 @@ const siteConfig = {
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: 'documentation',
+  projectName: 'Documentation',
   organizationName: 'System Team',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
@@ -55,7 +63,7 @@ const siteConfig = {
   /* Colors for website */
   colors: {
     primaryColor: '#0A66C2',
-    secondaryColor: '#46743e',
+    secondaryColor: '#074888',
   },
 
   /* Custom fonts for website */
@@ -77,7 +85,7 @@ const siteConfig = {
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
-    theme: 'default',
+    theme: 'dark',
   },
 
   // Add custom scripts here that would be placed in <script> tags.
