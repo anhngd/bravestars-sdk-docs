@@ -2,6 +2,7 @@
 id: facebook-signin
 title: Xác thực qua Facebook Login và Unity
 sidebar_label: Đăng nhập bằng Facebook
+custom_edit_url: https://git.bravestars.com/system/docs/-/edit/master/docs/sdk/facebook-signin.md
 ---
 ## Trước khi bắt đầu
 Trước khi có thể sử dụng Bravestars Authentication, bạn cần phải thêm Bravestars SDK vào Unity project của bạn
