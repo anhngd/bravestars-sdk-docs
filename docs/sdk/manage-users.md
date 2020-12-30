@@ -39,7 +39,7 @@ if(user != null)
 }
 ```
 ## Đổi mật khẩu người dùng
-Bạn có thể thay đổi mật khẩu người dùng bằng **ChangePasswordAsync**. Ví dụ:
+Bạn có thể thay đổi mật khẩu người dùng bằng phương thức **ChangePasswordAsync**. Ví dụ:
 ```csharp
 Bravestars.Auth.BravestarsUser user = auth.CurrentUser;
 string newPassword = "Pa$$word123";
