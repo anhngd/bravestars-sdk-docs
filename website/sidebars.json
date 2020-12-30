@@ -4,7 +4,8 @@
       "sdk/get-started",
       "sdk/manage-users",
       "sdk/google-signin",
-      "sdk/facebook-signin"
+      "sdk/facebook-signin",
+      "sdk/anonymous-authentication"
     ]
   },
   "docs-other": {
