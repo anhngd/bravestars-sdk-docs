@@ -149,16 +149,16 @@ class Index extends React.Component {
       <Block layout="fourColumn">
         {[
           {
-            content: 'This is the content of my feature',
-            image: `${baseUrl}img/undraw_react.svg`,
+            content: 'Hướng dẫn sử dụng SDK cho các project Unity',
+            image: `${baseUrl}img/sdk.svg`,
             imageAlign: 'top',
-            title: 'Feature One',
+            title: 'SDK Document',
           },
           {
-            content: 'The content of my second feature',
-            image: `${baseUrl}img/undraw_operating_system.svg`,
+            content: 'Quy tắc làm việc trên kho mã nguồn',
+            image: `${baseUrl}img/git.svg`,
             imageAlign: 'top',
-            title: 'Feature Two',
+            title: 'Git Document',
           },
         ]}
       </Block>
