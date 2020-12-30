@@ -1,7 +1,7 @@
 ---
-id: google-signin
-title: Xác thực qua Google Sign-in và Unity
-sidebar_label: Đăng nhập bằng Google
+id: facebook-signin
+title: Xác thực qua Facebook Login và Unity
+sidebar_label: Đăng nhập bằng Facebook
 ---
 ## Trước khi bắt đầu
 Trước khi có thể sử dụng Bravestars Authentication, bạn cần phải thêm Bravestars SDK vào Unity project của bạn
@@ -17,10 +17,10 @@ auth.GetApp(appClient);
 ```
 
 ## Xác thực
-Sau khi người dùng đăng nhập qua Google thành công, hãy sử dụng accesstoken để lấy một Credential và xác thực bằng nó, ví dụ:
+Sau khi người dùng đăng nhập qua Facebook thành công, hãy sử dụng accesstoken để lấy một Credential và xác thực bằng nó, ví dụ:
 ```csharp
 Bravestars.Auth.Credential credential =
-    Bravestars.Auth.GoogleAuthProvider(googleAccessToken, googleIdToken);
+    Bravestars.Auth.FacebookAuthProvider(facebookAccessToken);
 auth.SignInWithCredentialAsync(credential);
 ```
 ## Bước kế tiếp
