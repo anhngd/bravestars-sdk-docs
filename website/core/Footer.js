@@ -31,17 +31,14 @@ class Footer extends React.Component {
           </a>
           <div>
             <h5>Docs</h5>
-            <a href={this.docUrl('doc1.html')}>
-              Getting Started (or other categories)
+            <a href={this.docUrl('sdk/get-started')}>
+              SDK Document
             </a>
-            <a href={this.docUrl('doc2.html')}>Guides (or other categories)</a>
-            <a href={this.docUrl('doc3.html')}>
-              API Reference (or other categories)
-            </a>
+            <a href={this.docUrl('git/git-flow')}>Git Document</a>
           </div>
           <div>
             <h5>Community</h5>
-            <a href={`${this.props.config.baseUrl}users`}>User Showcase</a>
+            <a href={`${this.props.config.baseUrl}users`}>Users</a>
             <a
               href="https://stackoverflow.com/questions/tagged/"
               target="_blank"

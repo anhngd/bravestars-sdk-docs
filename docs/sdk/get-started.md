@@ -2,6 +2,7 @@
 id: get-started
 title: Bắt đầu
 sidebar_label: Bắt đầu
+custom_edit_url: https://git.bravestars.com/system/docs/-/edit/master/docs/sdk/get-started.md
 ---
 
 ## Bắt đầu với Bravestars Authentication trên Unity
@@ -21,4 +22,8 @@ Tạo một form cho phép người dùng sử dụng username, mật khẩu c�
 auth.SignInWithUsernameAndPasswordAsync(username, password)
 ```
 ## Kế tiếp
-
+Tìm hiểu cách thêm hỗ trợ cho các nhà cung cấp danh tính khác và tài khoản khách ẩn danh:
+- [Quản lý người dùng](sdk/manage-users.md)
+- [Đăng nhập bằng Google](sdk/google-signin.md)
+- [Đăng nhập bằng Facebook](sdk/facebook-signin.md)
+- [Xác thực Ẩn danh](sdk/anonymous-authentication.md)

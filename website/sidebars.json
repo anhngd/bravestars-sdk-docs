@@ -1,8 +1,14 @@
 {
   "docs": {
-    "SDK": ["sdk/get-started","sdk/manage-users"]
+    "SDK": [
+      "sdk/get-started",
+      "sdk/manage-users",
+      "sdk/google-signin",
+      "sdk/facebook-signin",
+      "sdk/anonymous-authentication"
+    ]
   },
   "docs-other": {
-    "Git": ["git/git-flo"]
+    "Git": ["git/git-flow"]
   }
 }
