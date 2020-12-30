@@ -14,12 +14,12 @@ Trước khi có thể sử dụng Bravestars Authentication, bạn cần phải
 Tạo form cho phép người dùng mới đăng ký trò chơi của bạn bằng username và mật khẩu của họ. Khi người dùng hoàn thành form, hãy xác thực thông tin người dùng gửi lên và chuyển chúng đến phương thức
  **CreateUserWithUsernameAndPasswordAsync**
 ```csharp
-auth.CreateUserWithUsernameAndPasswordAsync(username, password)
+auth.CreateUserWithUsernameAndPasswordAsync(username, password);
 ```
 ## Đăng nhập cho người dùng có tài khoản
 Tạo một form cho phép người dùng sử dụng username, mật khẩu của họ đăng nhập vào trò chơi. Khi họ đã hoàn thành form, hãy gọi đến phương thức **SignInWithUsernameAndPasswordAsync**
 ```csharp
-auth.SignInWithUsernameAndPasswordAsync(username, password)
+auth.SignInWithUsernameAndPasswordAsync(username, password);
 ```
 ## Kế tiếp
 Tìm hiểu cách thêm hỗ trợ cho các nhà cung cấp danh tính khác và tài khoản khách ẩn danh:

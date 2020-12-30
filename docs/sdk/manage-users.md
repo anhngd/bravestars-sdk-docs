@@ -2,6 +2,7 @@
 id: manage-users
 title: Quản lý người dùng
 sidebar_label: Quản lý người dùng
+custom_edit_url: https://git.bravestars.com/system/docs/-/edit/master/docs/sdk/manage-users.md
 ---
 ## Tạo tài khoản người dùng mới
 Bạn có thể tạo một tài khoản người dùng mới trong project bằng cách gọi đến phương thức **CreateUserWithUsernameAndPasswordAsync** hoặc sử dụng đăng nhập bằng các dịch vụ cung cấp danh tính như Facebook, Google

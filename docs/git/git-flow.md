@@ -2,6 +2,7 @@
 id: git-flow
 title: Quy tắc làm việc trên kho mã nguồn
 sidebar_label: Git flow
+custom_edit_url: https://git.bravestars.com/system/docs/-/edit/master/docs/git/git-flow.md
 ---
 
 ## Mục đích

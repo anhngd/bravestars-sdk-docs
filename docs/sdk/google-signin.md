@@ -2,6 +2,7 @@
 id: google-signin
 title: Xác thực qua Google Sign-in và Unity
 sidebar_label: Đăng nhập bằng Google
+custom_edit_url: https://git.bravestars.com/system/docs/-/edit/master/docs/sdk/google-signin.md
 ---
 ## Trước khi bắt đầu
 Trước khi có thể sử dụng Bravestars Authentication, bạn cần phải thêm Bravestars SDK vào Unity project của bạn
