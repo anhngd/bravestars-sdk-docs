@@ -1,6 +1,6 @@
 {
   "docs": {
-    "SDK": ["sdk/get-started"]
+    "SDK": ["sdk/get-started","sdk/manage-users"]
   },
   "docs-other": {
     "Git": ["git/git-flo"]

@@ -18,5 +18,7 @@ auth.CreateUserWithUsernameAndPasswordAsync(username, password)
 ## Đăng nhập cho người dùng có tài khoản
 Tạo một form cho phép người dùng sử dụng username, mật khẩu của họ đăng nhập vào trò chơi. Khi họ đã hoàn thành form, hãy gọi đến phương thức **SignInWithUsernameAndPasswordAsync**
 ```csharp
-auth.SignInWithUsernameAndPasswordAsync(username,password)
+auth.SignInWithUsernameAndPasswordAsync(username, password)
 ```
+## Kế tiếp
+
