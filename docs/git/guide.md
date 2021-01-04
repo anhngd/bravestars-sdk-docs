@@ -1,7 +1,5 @@
 ---
-id: guide-git-bravestars-com
+id: guide-git
 title: Hướng dẫn sử dụng git.bravestars.com
-sidebar_label: HDSD Git
+sidebar_label: Tao key ssh
 ---
-
-https://docs.gitlab.com/ee/ssh/
