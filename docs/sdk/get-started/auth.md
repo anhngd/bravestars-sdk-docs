@@ -5,11 +5,11 @@ sidebar_label: Thêm Bravestars Authentication vào Unity
 custom_edit_url: 
 ---
 ## Thêm Bravestars Authentication vào project Unity của bạn
-Cài đặt Bravestars Authentication vào project Unity của bạn để giảm chi phí hạ tầng cho công ty nào :)
+Cài đặt Bravestars Authentication vào project Unity của bạn để tăng tốc phát triển ứng dụng
 
 Đã sẵn sàng để thêm Bravestars Authentication vào project của bạn chưa? 
 Hãy chắc chắn đã cài đúng phiên bản cuối cùng.
-> Download Bravestars Authentication SDK --link--
+>[Download Bravestars Authentication SDK](https://git.bravestars.com/lamph/bravestars-sdk-unity-package/-/tree/master/com.bravestars.sdk)
 
 ## Các bước tiến hành cài đặt
 1. Tải Bravestars Authenticaion SDK và giải nén SDK ở 1 nơi nào đó thuận tiện
