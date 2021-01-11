@@ -23,7 +23,7 @@ auth.SignInWithUsernameAndPasswordAsync(username, password);
 ```
 ## Kế tiếp
 Tìm hiểu cách thêm hỗ trợ cho các nhà cung cấp danh tính khác và tài khoản khách ẩn danh:
-- [Quản lý người dùng](sdk/manage-users.md)
-- [Đăng nhập bằng Google](sdk/google-signin.md)
-- [Đăng nhập bằng Facebook](sdk/facebook-signin.md)
-- [Xác thực Ẩn danh](sdk/anonymous-authentication.md)
+- [Quản lý người dùng](sdk/auth/manage-users.md)
+- [Đăng nhập bằng Google](sdk/auth/google-signin.md)
+- [Đăng nhập bằng Facebook](sdk/auth/facebook-signin.md)
+- [Xác thực Ẩn danh](sdk/auth/anonymous-authentication.md)
