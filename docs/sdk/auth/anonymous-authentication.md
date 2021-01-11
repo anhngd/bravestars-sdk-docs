@@ -8,7 +8,7 @@ Bạn có thể sử dụng Xác thực ẩn danh để xác thực các tài kh
 tạm thời này có thể được sử dụng để cho phép người dùng chưa đăng ký ứng dụng của bạn làm việc với các dữ liệu được bảo vệ trong hệ thống.
 ## Trước khi bắt đầu
 Trước khi có thể sử dụng Bravestars Authentication, bạn cần phải thêm Bravestars SDK vào Unity project của bạn
->Tìm hướng dẫn chi tiết ở --link--
+>Tìm hướng dẫn chi tiết ở [đây](../get-started/auth.md)
 ## Xác thực ẩn danh
 Lớp BravestarsAuth là gateway cho tất cả lệnh gọi API. Nó có thể được truy cập thông qua ví dụ sau:
 ```csharp
