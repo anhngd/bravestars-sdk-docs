@@ -1,6 +1,9 @@
 {
   "docs": {
-    " Bravestars Authentication SDK": [
+    "Bắt đầu với Bravestars Authentication": [
+      "sdk/get-started/auth"
+    ],
+    "Bravestars Authentication SDK": [
       "sdk/auth/get-started",
       "sdk/auth/manage-users",
       "sdk/auth/google-signin",
