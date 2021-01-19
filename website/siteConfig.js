@@ -50,7 +50,7 @@ const siteConfig = {
     {doc: 'git/git-flow', label: 'Git'},
     {doc: 'version', label: 'Version'},
     {page: 'help', label: 'Help'},
-    {blog: true, label: 'Blog'},
+    // {blog: true, label: 'Blog'},
   ],
 
   // If you have users set above, you add it here:
