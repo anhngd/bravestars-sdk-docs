@@ -30,14 +30,17 @@ class Footer extends React.Component {
             )}
           </a>
           <div>
-            <h5>Docs</h5>
+            <h5>Documentation</h5>
             <a href={this.docUrl('sdk/get-started')}>
-              SDK Document
+              Bravestars Authentication
             </a>
-            <a href={this.docUrl('git/git-flow')}>Git Document</a>
+            <a href={this.docUrl('sdk/get-started')}>
+              Bravestars Save/Load
+            </a>
+            {/* <a href={this.docUrl('git/git-flow')}>Git </a> */}
           </div>
           <div>
-            <h5>Community</h5>
+            {/* <h5>Community</h5>
             <a href={`${this.props.config.baseUrl}users`}>Users</a>
             <a
               href="https://stackoverflow.com/questions/tagged/"
@@ -51,10 +54,10 @@ class Footer extends React.Component {
               target="_blank"
               rel="noreferrer noopener">
               Twitter
-            </a>
+            </a> */}
           </div>
           <div>
-            <h5>More</h5>
+            {/* <h5>More</h5>
             <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
             <a href="https://github.com/">GitHub</a>
             <a
@@ -88,11 +91,11 @@ class Footer extends React.Component {
                   data-show-faces="false"
                 />
               </div>
-            )}
+            )} */}
           </div>
         </section>
 
-        <a
+        {/* <a
           href="https://opensource.facebook.com/"
           target="_blank"
           rel="noreferrer noopener"
@@ -103,7 +106,7 @@ class Footer extends React.Component {
             width="170"
             height="45"
           />
-        </a>
+        </a> */}
         <section className="copyright">{this.props.config.copyright}</section>
       </footer>
     );

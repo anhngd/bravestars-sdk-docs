@@ -29,8 +29,8 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'Docs', // Title for your website.
-  tagline: 'Documentation',
+  title: 'Bravestars Games', // Title for your website.
+  tagline: 'Hướng dẫn sử dụng SDK để tích hợp vào các dịch vụ dùng chung',
   url: 'https://docs.bravestars.games', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -48,6 +48,7 @@ const siteConfig = {
   headerLinks: [
     {doc: 'sdk/auth/get-started', label: 'SDK'},
     {doc: 'git/git-flow', label: 'Git'},
+    {doc: 'version', label: 'Version'},
     {page: 'help', label: 'Help'},
     {blog: true, label: 'Blog'},
   ],
