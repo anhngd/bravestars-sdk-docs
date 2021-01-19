@@ -4,7 +4,7 @@ title: Thêm Bravestars Authentication vào Unity
 sidebar_label: Thêm Bravestars Authentication vào Unity
 custom_edit_url: 
 ---
-## Thêm Bravestars Authentication vào project Unity của bạn
+## Thêm Bravestars Authentication vào Unity
 Cài đặt Bravestars Authentication vào project Unity của bạn để tăng tốc phát triển ứng dụng
 
 Đã sẵn sàng để thêm Bravestars Authentication vào project của bạn chưa? 
