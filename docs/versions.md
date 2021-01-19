@@ -8,3 +8,5 @@ custom_edit_url: https://git.bravestars.com/system/docs/-/edit/master/docs/versi
  # 21.01.15
 
  ## Change log
+
+ - [Download](/dl/releqase/bsgsdk.2021.01.15.zip)
