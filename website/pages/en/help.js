@@ -40,11 +40,11 @@ function Help(props) {
     <div className="docMainWrapper wrapper">
       <Container className="mainContainer documentContainer postContainer">
         <div className="post">
-          {/* <header className="postHeader">
-            <h1>Need help?</h1>
+          <header className="postHeader">
+            <h1>Đóng góp</h1>
           </header>
-          <p>This project is maintained by a dedicated group of people.</p>
-          <GridBlock contents={supportLinks} layout="threeColumn" /> */}
+          <p></p>
+          <GridBlock contents={supportLinks} layout="threeColumn" />
         </div>
       </Container>
     </div>

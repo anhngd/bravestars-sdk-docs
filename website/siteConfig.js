@@ -49,7 +49,7 @@ const siteConfig = {
     {doc: 'sdk/auth/get-started', label: 'SDK'},
     {doc: 'git/git-flow', label: 'Git'},
     {doc: 'version', label: 'Version'},
-    {page: 'help', label: 'Help'},
+    {page: 'help', label: 'contribute'},
     // {blog: true, label: 'Blog'},
   ],
 
