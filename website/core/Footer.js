@@ -24,18 +24,18 @@ class Footer extends React.Component {
               <img
                 src={this.props.config.baseUrl + this.props.config.footerIcon}
                 alt={this.props.config.title}
-                width="66"
+                // width="66"
                 height="58"
               />
             )}
           </a>
           <div>
-            <h5>Documentation</h5>
+            <h5>Services</h5>
             <a href={this.docUrl('sdk/get-started')}>
-              Bravestars Authentication
+              Authentication
             </a>
             <a href={this.docUrl('sdk/get-started')}>
-              Bravestars Save/Load
+              Save/Load
             </a>
             {/* <a href={this.docUrl('git/git-flow')}>Git </a> */}
           </div>
@@ -95,18 +95,18 @@ class Footer extends React.Component {
           </div>
         </section>
 
-        {/* <a
+        <a
           href="https://opensource.facebook.com/"
           target="_blank"
           rel="noreferrer noopener"
           className="fbOpenSource">
           <img
-            src={`${this.props.config.baseUrl}img/oss_logo.png`}
+            src={`${this.props.config.baseUrl}img/bravestars.png`}
             alt="Facebook Open Source"
-            width="170"
-            height="45"
+            // width="170"
+            height="90"
           />
-        </a> */}
+        </a>
         <section className="copyright">{this.props.config.copyright}</section>
       </footer>
     );
