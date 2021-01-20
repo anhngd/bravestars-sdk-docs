@@ -31,10 +31,10 @@ class Footer extends React.Component {
           </a>
           <div>
             <h5>Services</h5>
-            <a href={this.docUrl('sdk/get-started')}>
+            <a target="_blank" href={this.docUrl('sdk/get-started')}>
               Authentication
             </a>
-            <a href={this.docUrl('sdk/get-started')}>
+            <a target="_blank" href={this.docUrl('sdk/get-started')}>
               Save/Load
             </a>
             {/* <a href={this.docUrl('git/git-flow')}>Git </a> */}
