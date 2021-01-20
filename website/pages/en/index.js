@@ -202,7 +202,7 @@ class Index extends React.Component {
           {/* <FeatureCallout />
           <LearnHow />
           <TryOut /> */}
-          <Description />
+          {/* <Description /> */}
           <Showcase />
         </div>
       </div>

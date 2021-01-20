@@ -58,7 +58,7 @@ const siteConfig = {
 
   /* path to images for header/footer */
   headerIcon: 'img/bravestars.png',
-  footerIcon: 'img/bravestars.png',
+  footerIcon: '',
   favicon: 'img/bravestars.png',
 
   /* Colors for website */
