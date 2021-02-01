@@ -9,6 +9,9 @@
       "sdk/auth/google-signin",
       "sdk/auth/facebook-signin",
       "sdk/auth/anonymous-authentication"
+    ],
+    "Save Load Service SDK": [
+      "sdk/saveload/saveload"
     ]
   },
   "docs-other": {
