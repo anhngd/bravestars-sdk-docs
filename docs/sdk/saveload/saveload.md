@@ -14,93 +14,84 @@ custom_edit_url: https://git.bravestars.com/system/docs/-/edit/master/docs/sdk/s
 
 ## Save Load Services API
 
-### **Purpose:**
+### Purpose
 
 - Load Configs for events, game system.
 - Save/Load User Data.
-  
-### **Public Constructors:**
 
-DataHelpers(string ApiUrl)
+### Server Enum
 
-### **Public Methods:**
+- PROD: production server
+- DEV: testing server
 
-#### **GetConfigUrl(ConfigRequest request, bool getAll = false)**
+### Public Constructors
 
-- Get Api Config Url to get a key or list key.
-- Method: GET
-- Note: getAll = true get list keys by game, getAll = false get a key.
-  
-#### **GetUserDataUrl(UserDataRequest request, bool getAll = false)**
+DataHelpers(ServerEnum server))
 
-- Get Api User Data Url to get a key or list keys.
-- Method: GET
-- Note: getAll = true get list keys by game and user, getAll = false get a key.
-  
-#### **SaveOrUpdateConfigUrl()**
+### Public Methods
 
-- Get Api Config Url to save or update value.
-- Method: POST
-  
-#### **PostConfigRequest(ConfigRequest request)**
+#### LoadConfig(ConfigRequest request)
 
-- Get body raw to post (include compress value to decrease size of bytes).
-  
-#### **SaveOrUpdateUserDataUrl()**
+- Input: ConfigRequest (string gameId, string key)
+- Output: ConfigResponse (string gameId, string key, string value)
+- Purpose: load config
 
-- Get Api UserData Url to save or update value.
-- Method: POST
-  
-#### **PostUserDataRequest(UserDataRequest request)**
+#### LoadAllConfig(ConfigRequest request)
 
-- Get body raw to post (include compress value to decrease size of bytes).
+- Input: ConfigRequest (string gameId)
+- Output: List\<ConfigResponse> (string gameId, string key, string value)
+- Purpose: load all configs by gameId
 
-#### **GetConfigResponse(string result)**
+#### LoadUserData(UserDataRequest request)
 
-- Convert result of api to object result (include decompress value).
+- Input: UserDataRequest (string gameId, string userId, string key)
+- Output: UserDataResponse (string gameId, string userId, string key, string value)
+- Purpose: load user data
 
-#### **GetUserDataResponse(string result)**
+#### LoadAllUserData(UserDataRequest request)
 
-- Convert result of api to object result (include decompress value).
+- Input: UserDataRequest (string gameId, string userId)
+- Output: List\<UserDataResponse> (string gameId, string userId, string key, string value)
+- Purpose: load all user data by gameId and userId
+
+#### SaveUserData(UserDataRequest request)
+
+- Input: UserDataRequest (string gameId, string userId, string key, string value)
+- Output: UserDataResponse (string gameId, string userId, string key, string value)
+- Purpose: save user data
 
 ### Models
 
-#### **ConfigRequest**
+#### ConfigRequest
 
 - string gameId
 - string key
-- string value  
+- string value
   Constructors:
-  1. ConfigRequest(string gameId, string key)
-  2. ConfigRequest(string gameId, string key, string value)
+  1. ConfigRequest(string gameId)
+  2. ConfigRequest(string gameId, string key)
+  3. ConfigRequest(string gameId, string key, string value)
 
-#### **ConfigResponse**
+#### ConfigResponse
 
 - string gameId
 - string key
 - string value
 
-#### **ListConfigResponse**
-
-- List(ConfigResponse) items
-
-#### **UserDataRequest**
-
-- string userId
-- string gameId
-- string key
-- string value  
-  Constructors:
-  1. UserDataRequest(string userId, string gameId, string key)
-  2. UserDataRequest(string userId, string gameId, string key, string value)
-
-#### **UserDataResponse**
+#### UserDataRequest
 
 - string userId
 - string gameId
 - string key
 - string value
-  
-#### **ListUserDataResponse**
+  Constructors:
+  1. UserDataRequest(string userId, string gameId)
+  2. UserDataRequest(string userId, string gameId, string key)
+  3. UserDataRequest(string userId, string gameId, string key, string value)
 
-- List(UserDataResponse) items
+#### UserDataResponse
+
+- string userId
+- string gameId
+- string key
+- string value
