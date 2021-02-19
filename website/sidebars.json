@@ -3,15 +3,15 @@
     "Bắt đầu": [
       "sdk/get-started/auth"
     ],
-    "Bravestars Authentication SDK": [
+    "BSG Authentication": [
       "sdk/auth/get-started",
       "sdk/auth/manage-users",
       "sdk/auth/google-signin",
       "sdk/auth/facebook-signin",
       "sdk/auth/anonymous-authentication"
     ],
-    "Save Load Service SDK": [
-      "sdk/saveload/saveload"
+    "BSG Save/Load Data": [
+      "sdk/data/saveload"
     ]
   },
   "docs-other": {

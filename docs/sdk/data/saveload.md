@@ -1,12 +1,9 @@
 ---
 
 id: saveload
-
 title: Dịch vụ Save Load Config và UserData
-
 sidebar_label: Dịch vụ Save Load
-
-custom_edit_url: https://git.bravestars.com/system/docs/-/edit/master/docs/sdk/saveload.md
+custom_edit_url: https://git.bravestars.com/system/docs/-/edit/master/docs/sdk/data/saveload.md
 
 ---
 
