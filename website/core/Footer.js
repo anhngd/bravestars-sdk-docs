@@ -24,20 +24,23 @@ class Footer extends React.Component {
               <img
                 src={this.props.config.baseUrl + this.props.config.footerIcon}
                 alt={this.props.config.title}
-                width="66"
+                // width="66"
                 height="58"
               />
             )}
           </a>
           <div>
-            <h5>Docs</h5>
-            <a href={this.docUrl('sdk/get-started')}>
-              SDK Document
+            <h5>Services</h5>
+            <a target="_blank" href={this.docUrl('sdk/get-started')}>
+              Authentication
             </a>
-            <a href={this.docUrl('git/git-flow')}>Git Document</a>
+            <a target="_blank" href={this.docUrl('sdk/get-started')}>
+              Save/Load
+            </a>
+            {/* <a href={this.docUrl('git/git-flow')}>Git </a> */}
           </div>
           <div>
-            <h5>Community</h5>
+            {/* <h5>Community</h5>
             <a href={`${this.props.config.baseUrl}users`}>Users</a>
             <a
               href="https://stackoverflow.com/questions/tagged/"
@@ -51,13 +54,13 @@ class Footer extends React.Component {
               target="_blank"
               rel="noreferrer noopener">
               Twitter
-            </a>
+            </a> */}
           </div>
           <div>
             <h5>More</h5>
-            <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
-            <a href="https://github.com/">GitHub</a>
-            <a
+            <a href="https://blog.bravestars.com/">Blog</a>
+            <a href="https://git.bravestars.com.com/">Git</a>
+            {/* <a
               className="github-button"
               href={this.props.config.repoUrl}
               data-icon="octicon-star"
@@ -88,20 +91,20 @@ class Footer extends React.Component {
                   data-show-faces="false"
                 />
               </div>
-            )}
+            )} */}
           </div>
         </section>
 
         <a
-          href="https://opensource.facebook.com/"
+          href="https://bravestars.com"
           target="_blank"
           rel="noreferrer noopener"
           className="fbOpenSource">
           <img
-            src={`${this.props.config.baseUrl}img/oss_logo.png`}
+            src={`${this.props.config.baseUrl}img/bravestars.png`}
             alt="Facebook Open Source"
-            width="170"
-            height="45"
+            // width="170"
+            height="90"
           />
         </a>
         <section className="copyright">{this.props.config.copyright}</section>

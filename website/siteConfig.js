@@ -29,16 +29,16 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'Docs', // Title for your website.
-  tagline: 'Documentation',
-  url: 'https://docs.bravestars.com', // Your website URL
+  title: 'Bravestars Games', // Title for your website.
+  tagline: 'Hướng dẫn sử dụng SDK để tích hợp vào các dịch vụ dùng chung',
+  url: 'https://docs.bravestars.games', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: 'Documentation',
+  projectName: 'bravestars-sdk-docs',
   organizationName: 'System Team',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
@@ -48,17 +48,18 @@ const siteConfig = {
   headerLinks: [
     {doc: 'sdk/auth/get-started', label: 'SDK'},
     {doc: 'git/git-flow', label: 'Git'},
-    {page: 'help', label: 'Help'},
-    {blog: true, label: 'Blog'},
+    {doc: 'version', label: 'Version'},
+    {page: 'help', label: 'contribute'},
+    // {blog: true, label: 'Blog'},
   ],
 
   // If you have users set above, you add it here:
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/favicon.ico',
-  footerIcon: 'img/favicon.ico',
-  favicon: 'img/favicon.ico',
+  headerIcon: 'img/bravestars.png',
+  footerIcon: '',
+  favicon: 'img/bravestars.png',
 
   /* Colors for website */
   colors: {
