@@ -7,7 +7,7 @@ custom_edit_url: https://git.bravestars.com/system/docs/-/edit/master/docs/sdk/a
 Bạn có thể sử dụng Xác thực ẩn danh để xác thực các tài khoản ẩn danh tạm thời. Các tài khoản ẩn danh
 tạm thời này có thể được sử dụng để cho phép người dùng chưa đăng ký ứng dụng của bạn làm việc với các dữ liệu được bảo vệ trong hệ thống.
 ## Trước khi bắt đầu
-Trước khi có thể sử dụng Bravestars Authentication, bạn cần phải thêm Bravestars SDK vào Unity project của bạn
+Trước khi có thể sử dụng BSG Authentication, bạn cần phải thêm BSG SDK vào Unity project của bạn
 >Tìm hướng dẫn chi tiết ở [đây](../get-started/setup.md)
 ## Xác thực ẩn danh
 Lớp BravestarsAuth là gateway cho tất cả lệnh gọi API. Nó có thể được truy cập thông qua ví dụ sau:

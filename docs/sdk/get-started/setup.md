@@ -8,7 +8,7 @@ custom_edit_url:
 Nên ưu tiên cài phiên bản cuối cùng.
 >Tải về [BSG SDK Lastest](https://git.bravestars.com/lamph/bravestars-sdk-unity-package/-/archive/master/bravestars-sdk-unity-package-master.zip?path=builded%20package)
 
-Xem các phiên bản cũ hơn ở đây
+Xem tất các phiên bản ở [đây](../../versions.md)
 ## Các bước tiến hành cài đặt
 1. Tải BSG SDK và giải nén SDK ở 1 nơi nào đó thuận tiện
 2. Trong project Unity đang ở của bạn, điều hướng đến **`Assets`** > **`Import Package`** > **`Custom Package`**.
@@ -16,4 +16,4 @@ Xem các phiên bản cũ hơn ở đây
 4. Trong cửa sổ *`Import Unity Package`*, nhấn nút **`Import`**
 5. Trở về Bravestars Console, trong setup workflow, nhấn **`Next`**
 
-Bạn đã hoàn tất, project của bạn đã sẵn sàng để sử dụng **Bravestars Authentication**.
+Bạn đã hoàn tất, project của bạn đã sẵn sàng để sử dụng **BSG SDK**.
