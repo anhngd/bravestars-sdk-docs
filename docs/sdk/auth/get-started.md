@@ -9,7 +9,7 @@ custom_edit_url: https://git.bravestars.com/system/docs/-/edit/master/docs/sdk/g
 Bạn có thể sử dụng Bravestars Authentication để cho phép người dùng đăng nhập vào trò chơi của bạn bằng một hay nhiều phương thức đăng nhập, bao gồm đăng nhập bằng username và mật khẩu, hoặc sử dụng các nhà cung cấp danh tính như Google hay Facebook. Hướng dẫn này giúp bạn bắt đầu với xác thực với Bravestars Authentication bằng cách chỉ cho bạn cách thêm username và mật khẩu vào trò chơi của bạn
 ## Trước khi bắt đầu
 Trước khi có thể sử dụng Bravestars Authentication, bạn cần phải thêm Bravestars SDK vào Unity project của bạn
->Tìm hướng dẫn chi tiết ở [đây](../get-started/auth.md)
+>Tìm hướng dẫn chi tiết ở [đây](../get-started/setup.md)
 ## Đăng ký người dùng mới
 Tạo form cho phép người dùng mới đăng ký trò chơi của bạn bằng username và mật khẩu của họ. Khi người dùng hoàn thành form, hãy xác thực thông tin người dùng gửi lên và chuyển chúng đến phương thức
  **CreateUserWithUsernameAndPasswordAsync**

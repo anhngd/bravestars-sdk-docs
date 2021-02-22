@@ -6,7 +6,7 @@ custom_edit_url: https://git.bravestars.com/system/docs/-/edit/master/docs/sdk/f
 ---
 ## Trước khi bắt đầu
 Trước khi có thể sử dụng Bravestars Authentication, bạn cần phải thêm Bravestars SDK vào Unity project của bạn
->Tìm hướng dẫn chi tiết ở [đây](../get-started/auth.md)
+>Tìm hướng dẫn chi tiết ở [đây](../get-started/setup.md)
 ## Truy cập lớp **Bravestars.Auth.BravestarsAuth**
 Lớp BravestarsAuth là gateway cho tất cả lệnh gọi API. Nó có thể được truy cập thông qua ví dụ sau:
 ```csharp
