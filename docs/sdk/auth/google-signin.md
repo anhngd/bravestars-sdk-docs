@@ -16,7 +16,11 @@ Bravestars.Auth.AppClient appClient = new AppClient(appInfo);
 Bravestars.Auth.BravestarsAuth auth = new BravestarsAuth();
 auth.GetApp(appClient);
 ```
-
+>Để gọi API trong **môi trường Dev**, bạn cần khai báo đối tượng AppClient như sau
+>
+>```csharp
+>Bravestars.Auth.AppClient appClient = new AppClient(appInfo, productionMode: false);
+>```
 ## Xác thực
 Sau khi người dùng đăng nhập qua Google thành công, hãy sử dụng accesstoken để lấy một Credential và xác thực bằng nó, ví dụ:
 ```csharp
