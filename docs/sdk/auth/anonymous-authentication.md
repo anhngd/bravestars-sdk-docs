@@ -18,6 +18,11 @@ Bravestars.Auth.AppClient appClient = new AppClient(appInfo);
 Bravestars.Auth.BravestarsAuth auth = new BravestarsAuth();
 auth.GetApp(appClient);
 ```
+>Để gọi API trong **môi trường Dev**, bạn cần khai báo đối tượng AppClient như sau
+>
+>```csharp
+>Bravestars.Auth.AppClient appClient = new AppClient(appInfo, productionMode: false);
+>```
 Gọi tới phương thức **Bravestars.Auth.BravestarsAuth.SignInAnonymouslyAsync** để hoàn tất xác thực
 ```csharp
 auth.SignInAnonymouslyAsync(deviceId);
