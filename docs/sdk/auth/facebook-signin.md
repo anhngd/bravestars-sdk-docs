@@ -5,8 +5,8 @@ sidebar_label: Đăng nhập bằng Facebook
 custom_edit_url: https://git.bravestars.com/system/docs/-/edit/master/docs/sdk/facebook-signin.md
 ---
 ## Trước khi bắt đầu
-Trước khi có thể sử dụng Bravestars Authentication, bạn cần phải thêm Bravestars SDK vào Unity project của bạn
->Tìm hướng dẫn chi tiết ở [đây](../get-started/auth.md)
+Trước khi có thể sử dụng BSG Authentication, bạn cần phải thêm BSG SDK vào Unity project của bạn
+>Tìm hướng dẫn chi tiết ở [đây](../get-started/setup.md)
 ## Truy cập lớp **Bravestars.Auth.BravestarsAuth**
 Lớp BravestarsAuth là gateway cho tất cả lệnh gọi API. Nó có thể được truy cập thông qua ví dụ sau:
 ```csharp
@@ -16,7 +16,11 @@ Bravestars.Auth.AppClient appClient = new AppClient(appInfo);
 Bravestars.Auth.BravestarsAuth auth = new BravestarsAuth();
 auth.GetApp(appClient);
 ```
-
+>Để gọi API trong **môi trường Dev**, bạn cần khai báo đối tượng AppClient như sau
+>
+>```csharp
+>Bravestars.Auth.AppClient appClient = new AppClient(appInfo, productionMode: false);
+>```
 ## Xác thực
 Sau khi người dùng đăng nhập qua Facebook thành công, hãy sử dụng accesstoken để lấy một Credential và xác thực bằng nó, ví dụ:
 ```csharp

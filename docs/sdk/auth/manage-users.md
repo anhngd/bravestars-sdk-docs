@@ -5,10 +5,10 @@ sidebar_label: Quản lý người dùng
 custom_edit_url: https://git.bravestars.com/system/docs/-/edit/master/docs/sdk/manage-users.md
 ---
 ## Tạo tài khoản người dùng mới
-Bạn có thể tạo một tài khoản người dùng mới trong project bằng cách gọi đến phương thức **CreateUserWithUsernameAndPasswordAsync** hoặc sử dụng đăng nhập bằng các dịch vụ cung cấp danh tính như Facebook, Google
+Bạn có thể tạo một tài khoản người dùng mới bằng cách gọi đến phương thức **CreateUserWithUsernameAndPasswordAsync** hoặc đăng nhập bằng **Facebook**, **Google**
 
 ## Lấy người dùng đang đăng nhập
-Cách được đề xuất là lấy người dùng đang đăng nhập hiện tại thông qua Auth object
+Cách được đề xuất là lấy thông qua Auth object
 ```csharp
 Bravestars.Auth.BravestarsAuth auth;
 Bravestars.Auth.BravestarsUser user;
