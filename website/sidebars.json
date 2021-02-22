@@ -10,11 +10,14 @@
       "sdk/auth/facebook-signin",
       "sdk/auth/anonymous-authentication"
     ],
-    "Save Load Service SDK": [
-      "sdk/saveload/saveload"
+    "Data Service SDK": [
+      "sdk/data/retrieve_data",
+      "sdk/data/save_data"
     ]
   },
   "docs-other": {
-    "Git": ["git/git-flow"]
+    "Git": [
+      "git/git-flow"
+    ]
   }
 }
