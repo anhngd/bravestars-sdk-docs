@@ -1,9 +1,9 @@
 {
   "docs": {
     "Bắt đầu": [
-      "sdk/get-started/auth"
+      "sdk/get-started/setup"
     ],
-    "Bravestars Authentication SDK": [
+    "BSG Authentication": [
       "sdk/auth/get-started",
       "sdk/auth/manage-users",
       "sdk/auth/google-signin",
