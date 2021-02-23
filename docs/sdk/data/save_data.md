@@ -9,10 +9,9 @@ custom_edit_url: https://git.bravestars.com/system/docs/-/edit/master/docs/sdk/s
 
 ### Trước khi bắt đầu
 
-Trước khi sử dụng dịch vụ Data Service, bạn cần phải thêm thư viện Bravestars Data Plugin vào Unity Project
+Trước khi sử dụng dịch vụ Data Service, bạn cần phải thêm Bravestars SDK vào Unity project của bạn
 
-> - Tải thư viện Bravestars Data
-> - Assets > Import Package > Custom Package
+> Tìm hướng dẫn chi tiết ở [đây](https://docs.bravestars.games/docs/sdk/get-started/auth)
 
 ### Truy xuất dữ liệu
 

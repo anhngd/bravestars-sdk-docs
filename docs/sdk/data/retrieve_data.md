@@ -9,10 +9,9 @@ custom_edit_url: https://git.bravestars.com/system/docs/-/edit/master/docs/sdk/r
 
 ### Trước khi bắt đầu
 
-Trước khi sử dụng dịch vụ Data Service, bạn cần phải thêm thư viện Bravestars Data Plugin vào Unity Project
+Trước khi sử dụng dịch vụ Data Service, bạn cần phải thêm Bravestars SDK vào Unity project của bạn
 
-> - Tải thư viện Bravestars Data
-> - Assets > Import Package > Custom Package
+> Tìm hướng dẫn chi tiết ở [đây](https://docs.bravestars.games/docs/sdk/get-started/auth)
 
 ### Truy xuất dữ liệu
 
@@ -50,7 +49,7 @@ Bạn sử dụng phương thức ``LoadAllConfig`` để lấy tất cả dữ 
 ```C#
 string gameId = '1';
 ConfigRequest request = new ConfigRequest(gameId);
-ConfigResponse response = helpers.LoadAllConfig(request);
+ListConfigResponse response = helpers.LoadAllConfig(request);
 ```
 
 ### Lấy dữ liệu user 1 lần
@@ -75,5 +74,5 @@ lấy tất cả dữ liệu của 1 User.
 string gameId = '1';
 string userId = '1';
 UserDataRequest request = new UserDataRequest(userId, gameId);
-UserDataResponse response = helpers.LoadUserData(request);
+ListUserDataResponse response = helpers.LoadUserData(request);
 ```
