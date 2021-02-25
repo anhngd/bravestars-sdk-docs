@@ -41,7 +41,11 @@ string userId = '1';
 string key = 'Arena';
 string value = '{\'Key\':\'ABC\',\'Value\':\'123456\'}';
 UserDataRequest request = new UserDataRequest(userId, gameId, key, value);
-UserDataResponse response = helpers.SaveOrUpdateUserData(request);
+try {
+  UserDataResponse response = helpers.SaveOrUpdateUserData(request);
+} catch (ApiException ex) {
+  Debug.Log(ex);
+}
 ```
 
 ### Chú ý
