@@ -24,7 +24,12 @@
     "Bravestars.Auth": [
       "reference/auth/overview",
       "reference/auth/app-client",
-      "reference/auth/app-options"
+      "reference/auth/app-options",
+      "reference/auth/bravestars-auth",
+      "reference/auth/bravestars-user",
+      "reference/auth/credential",
+      "reference/auth/facebook-auth-provider",
+      "reference/auth/google-auth-provider"
     ]
   }
 }
