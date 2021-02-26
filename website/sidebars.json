@@ -10,8 +10,9 @@
       "sdk/auth/facebook-signin",
       "sdk/auth/anonymous-authentication"
     ],
-    "BSG Save/Load Data": [
-      "sdk/data/saveload"
+    "Data Service SDK": [
+      "sdk/data/retrieve_data",
+      "sdk/data/save_data"
     ]
   },
   "docs-other": {
@@ -20,7 +21,6 @@
     ]
   },
   "docs-reference": {
-
     "Bravestars.Auth": [
       "reference/auth/overview",
       "reference/auth/app-client",
