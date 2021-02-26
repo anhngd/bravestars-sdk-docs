@@ -47,7 +47,7 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {doc: 'sdk/auth/get-started', label: 'SDK'},
-    {doc: 'reference/common/overview', label: 'Reference'},
+    {doc: 'reference/auth/overview', label: 'Reference'},
     {doc: 'git/git-flow', label: 'Git'},
     {doc: 'version', label: 'Version'},
     {page: 'help', label: 'Contribute'},

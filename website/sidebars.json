@@ -20,9 +20,9 @@
     ]
   },
   "docs-reference": {
-    "Bravestars.Common": [
-      "reference/common/overview",
-      "reference/common/BaseClient"
+
+    "Bravestars.Auth": [
+      "reference/auth/overview"
     ]
   }
 }
