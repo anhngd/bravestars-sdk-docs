@@ -23,8 +23,8 @@ using Bravestars.SDK.Data;
 
 public class MyScript: MonoBehaviour {
   void Start() {
-    Bravestars.Auth.AppInfo appInfo = new AppInfo("appId","secretKey");
-    Bravestars.Auth.AppClient appClient = new AppClient(appInfo); 
+    Bravestars.Auth.AppOptions appOptions = new AppOptions(){appId = "appId", secretKey = "secretKey"};
+    Bravestars.Auth.AppClient appClient = new AppClient(appOptions); 
     DataHelpers helpers = new DataHelpers(appClient);
   }
 }
