@@ -8,7 +8,7 @@ custom_edit_url: https://git.bravestars.com/system/docs/-/edit/master/docs/sdk/m
 Bạn có thể tạo một tài khoản người dùng mới bằng cách gọi đến phương thức **CreateUserWithUsernameAndPasswordAsync** hoặc đăng nhập bằng **Facebook**, **Google**
 
 ## Lấy người dùng đang đăng nhập
-Cách được đề xuất là lấy thông qua Auth object
+Cách được đề xuất là lấy thông qua [BravestarsAuth](../../reference/auth/bravestars-auth.md) object
 ```csharp
 Bravestars.Auth.BravestarsAuth auth;
 Bravestars.Auth.BravestarsUser user;
@@ -19,7 +19,7 @@ if(auth.CurrentUser != null)
 }
 ```
 ## Lấy thông tin người dùng
-Để lấy thông tin người dùng, bạn hãy sử dụng phương accessor method của một instance **Bravestars.Auth.BravestarsUser**
+Để lấy thông tin người dùng, bạn hãy sử dụng accessor method của một instance **[BravestarsUser](../../reference/auth/bravestars-user.md)**
 ```csharp
 Bravestars.Auth.BravestarsUser user = auth.CurrentUser;
 if(user != null)

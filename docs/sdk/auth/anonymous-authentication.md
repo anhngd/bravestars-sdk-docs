@@ -10,7 +10,7 @@ tạm thời này có thể được sử dụng để cho phép người dùng 
 Trước khi có thể sử dụng BSG Authentication, bạn cần phải thêm BSG SDK vào Unity project của bạn
 >Tìm hướng dẫn chi tiết ở [đây](../get-started/setup.md)
 ## Xác thực ẩn danh
-Lớp BravestarsAuth là gateway cho tất cả lệnh gọi API. Nó có thể được truy cập thông qua ví dụ sau:
+Lớp [BravestarsAuth](../../reference/auth/bravestars-auth.md) là gateway cho tất cả lệnh gọi API. Nó có thể được truy cập thông qua ví dụ sau:
 ```csharp
 Bravestars.Auth.AppOptions appOptions = new AppOptions(){appId = "appId", secretKey = "secretKey"};
 Bravestars.Auth.AppClient appClient = new AppClient(appOptions); 
