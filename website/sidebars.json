@@ -22,7 +22,9 @@
   "docs-reference": {
 
     "Bravestars.Auth": [
-      "reference/auth/overview"
+      "reference/auth/overview",
+      "reference/auth/app-client",
+      "reference/auth/app-options"
     ]
   }
 }

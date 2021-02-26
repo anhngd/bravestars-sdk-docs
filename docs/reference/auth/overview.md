@@ -9,7 +9,7 @@ Bravestars.Auth chứa các class dùng để xác thực và ủy quyền với
 |Class|Mô tả|
 |---|---|
 |AppClient|Đối tượng client|
-|AppInfo|Lớp chứa thông tin khởi tạo kết nối với Server|
+|AppOptions|Lớp chứa thông tin khởi tạo kết nối với Server và các tùy chọn|
 |BravestarsAuth|Đối tượng xác thực|
 |BravestarUser|Đối tượng tài khoản người dùng|
 |Credential|Chứng chỉ xác thực|
