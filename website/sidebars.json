@@ -15,6 +15,14 @@
     ]
   },
   "docs-other": {
-    "Git": ["git/git-flow"]
+    "Git": [
+      "git/git-flow"
+    ]
+  },
+  "docs-reference": {
+    "Bravestars.Common": [
+      "reference/common/overview",
+      "reference/common/BaseClient"
+    ]
   }
 }
