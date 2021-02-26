@@ -12,16 +12,25 @@ Trước khi có thể sử dụng BSG Authentication, bạn cần phải thêm 
 ## Xác thực ẩn danh
 Lớp BravestarsAuth là gateway cho tất cả lệnh gọi API. Nó có thể được truy cập thông qua ví dụ sau:
 ```csharp
-Bravestars.Auth.AppInfo appInfo = new AppInfo("appId","secretKey");
-Bravestars.Auth.AppClient appClient = new AppClient(appInfo); 
+Bravestars.Auth.AppOptions appOptions = new AppOptions(){appId = "appId", secretKey = "secretKey"};
+Bravestars.Auth.AppClient appClient = new AppClient(appOptions); 
 
 Bravestars.Auth.BravestarsAuth auth = new BravestarsAuth();
 auth.GetApp(appClient);
 ```
->Để gọi API trong **môi trường Dev**, bạn cần khai báo đối tượng AppClient như sau
+>Để cấu hình môi trường của app, bạn cần khai báo đối tượng [AppOptions](reference/auth/app-options.md) như sau
 >
 >```csharp
->Bravestars.Auth.AppClient appClient = new AppClient(appInfo, productionMode: false);
+>Bravestars.Auth.AppOptions appOptions = new AppOptions(){
+>   appId = "appId",
+>   secretKey = "secretKey",
+>   Mode = AppMode.Production,  //AppMode là một enum gồm các giá trị như Production, Development, Local
+>                               //Quy định môi trường của app khi chạy
+>                               //Giá trị mặc định là Production
+>
+>   RequestTimeOut = 10000      //Quy định thời gian tối đa request của api, đơn vị ms
+>                               //Giá trị mặc định là 10000 ms 
+>};
 >```
 Gọi tới phương thức **Bravestars.Auth.BravestarsAuth.SignInAnonymouslyAsync** để hoàn tất xác thực
 ```csharp
