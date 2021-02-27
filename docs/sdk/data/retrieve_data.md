@@ -39,7 +39,11 @@ lấy dữ liệu Config.
 string gameId = '1';
 string key = 'Cfg_Arena';
 ConfigRequest request = new ConfigRequest(gameId, key);
-ConfigResponse response = helpers.LoadConfig(request);
+try {
+  ConfigResponse response = helpers.LoadConfig(request);
+} catch (ApiException ex) {
+  Debug.Log(ex);
+}
 ```
 
 ### Lấy tất cả dữ liệu config 1 lần
@@ -49,7 +53,12 @@ Bạn sử dụng phương thức ``LoadAllConfig`` để lấy tất cả dữ 
 ```C#
 string gameId = '1';
 ConfigRequest request = new ConfigRequest(gameId);
-ListConfigResponse response = helpers.LoadAllConfig(request);
+try {
+  List<ConfigResponse> response = helpers.LoadAllConfig(request);
+} catch (ApiException ex) {
+  Debug.Log(ex);
+}
+
 ```
 
 ### Lấy dữ liệu user 1 lần
@@ -62,7 +71,11 @@ string gameId = '1';
 string userId = '1';
 string key = 'Arena';
 UserDataRequest request = new UserDataRequest(userId, gameId, key);
-UserDataResponse response = helpers.LoadUserData(request);
+try {
+  UserDataResponse response = helpers.LoadUserData(request);
+} catch (ApiException ex) {
+  Debug.Log(ex);
+}
 ```
 
 ### Lấy tất cả dữ liệu của 1 user 1 lần
@@ -74,5 +87,9 @@ lấy tất cả dữ liệu của 1 User.
 string gameId = '1';
 string userId = '1';
 UserDataRequest request = new UserDataRequest(userId, gameId);
-ListUserDataResponse response = helpers.LoadUserData(request);
+try {
+  List<UserDataResponse> response = helpers.LoadUserData(request);
+} catch (ApiException ex) {
+  Debug.Log(ex);
+}
 ```
