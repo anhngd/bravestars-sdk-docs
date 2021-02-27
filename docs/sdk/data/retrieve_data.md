@@ -9,9 +9,9 @@ custom_edit_url: https://git.bravestars.com/system/docs/-/edit/master/docs/sdk/r
 
 ### Trước khi bắt đầu
 
-Trước khi sử dụng dịch vụ Data Service, bạn cần phải thêm Bravestars SDK vào Unity project của bạn
+Trước khi sử dụng dịch vụ Data Service, bạn cần phải thêm BSG SDK vào Unity project của bạn
 
-> Tìm hướng dẫn chi tiết ở [đây](https://docs.bravestars.games/docs/sdk/get-started/auth)
+> Tìm hướng dẫn chi tiết ở [đây](../get-started/setup.md)
 
 ### Truy xuất dữ liệu
 
@@ -23,8 +23,8 @@ using Bravestars.SDK.Data;
 
 public class MyScript: MonoBehaviour {
   void Start() {
-    Bravestars.Auth.AppInfo appInfo = new AppInfo("appId","secretKey");
-    Bravestars.Auth.AppClient appClient = new AppClient(appInfo); 
+    Bravestars.Auth.AppOptions appOptions = new AppOptions(){appId = "appId", secretKey = "secretKey"};
+    Bravestars.Auth.AppClient appClient = new AppClient(appOptions); 
     DataHelpers helpers = new DataHelpers(appClient);
   }
 }
