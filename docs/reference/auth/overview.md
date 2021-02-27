@@ -14,4 +14,4 @@ Bravestars.Auth chứa các class dùng để xác thực và ủy quyền với
 |BravestarUser|Đối tượng tài khoản người dùng|
 |Credential|Chứng chỉ xác thực|
 |FacebookAuthProvider|Sử dụng access token do Facebook cung cấp để xác thực.|
-|GoogleAuthProvider|Sử dụng mã ID token và access token do Google cung cấp để xác thực.|
+|GoogleAuthProvider|Sử dụng mã Id token và access token do Google cung cấp để xác thực.|
