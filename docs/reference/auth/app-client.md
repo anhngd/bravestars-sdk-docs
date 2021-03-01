@@ -24,5 +24,5 @@ public readonly string AccessToken;
 public string SendHttpRequestWithAuthorization(HttpRequestMessage requestMessage, Object content)
 
 //Ping tới open api để kiểm tra server có hoạt động không
-public bool CheckOpenApiServer()
+public PingReply CheckOpenApiServer()
 ```
