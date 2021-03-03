@@ -14,9 +14,26 @@ public string Id
 //tên tài khoản
 public string UserName
 
-//tên tài khoản bình thường hóa
-public string NormalizedUserName
-...
+//email của tài khoản
+public string Email
+
+//Xác nhận email
+public bool EmailConfirmed
+
+//Xác nhận người dùng ẩn danh 
+public bool IsAnonymous 
+
+//Số điện thoại của tài khoản
+public string PhoneNumber
+
+//Xác nhận số điện thoại
+public bool PhoneNumberConfirmed
+
+//Thời gian tạo 
+public DateTimeOffset? Created
+
+//Thời gian chỉnh sửa 
+public DateTimeOffset? Modifed
 ```
 ### Public functions
 ```csharp
