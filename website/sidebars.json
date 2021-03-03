@@ -30,6 +30,14 @@
       "reference/auth/credential",
       "reference/auth/facebook-auth-provider",
       "reference/auth/google-auth-provider"
+    ],
+    "Bravestars.SDK.Data": [
+      "reference/data/overview",
+      "reference/data/data-helpers",
+      "reference/data/config-request",
+      "reference/data/config-response",
+      "reference/data/user-data-request",
+      "reference/data/user-data-response"
     ]
   }
 }
