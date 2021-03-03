@@ -27,10 +27,12 @@ public BravestarsAuth GetApp(AppClient appClient)
 public Task CreateUserWithUsernameAndPasswordAsync(string username, string password)
 
 //Đăng nhập với chứng chỉ
-public Task<BravestarsUser> SignInWithCredentialAsync(Credential credential)
+//createNewAccount mặc định là true, có nghĩa là tự động tạo tài khoản nếu chưa tồn tại và ngược lại.
+public Task<BravestarsUser> SignInWithCredentialAsync(Credential credential, bool createNewAccount = true)
 
 //Đăng nhập ẩn danh
-public Task<BravestarsUser> SignInAnonymouslyAsync(string deviceId = null)
+//createNewAccount mặc định là true, có nghĩa là tự động tạo tài khoản nếu chưa tồn tại và ngược lại.
+public Task<BravestarsUser> SignInAnonymouslyAsync(string deviceId, bool createNewAccount = true)
 
 //Giải mã chuỗi json và đưa về đối tượng BravestarsUser
 public static BravestarsUser JsonDecodeToBravestarsUser(string raw)
