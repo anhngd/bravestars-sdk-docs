@@ -10,7 +10,6 @@ sidebar_label: Config Request
 ### Properties
 
 ``` Thuộc tính
-public string gameId;
 public string key;
 public string value;
 ```
@@ -18,7 +17,6 @@ public string value;
 ### Contructors
 
 ``` Khởi tạo
-public ConfigRequest(string gameId)
-public ConfigRequest(string gameId, string key)
-public ConfigRequest(string gameId, string key, string value)
+public ConfigRequest(string key)
+public ConfigRequest(string key, string value)
 ```

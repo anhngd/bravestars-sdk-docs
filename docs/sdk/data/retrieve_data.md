@@ -36,9 +36,8 @@ Bạn sử dụng phương thức ``LoadConfig`` để
 lấy dữ liệu Config.
 
 ```C#
-string gameId = '1';
 string key = 'Cfg_Arena';
-ConfigRequest request = new ConfigRequest(gameId, key);
+ConfigRequest request = new ConfigRequest(key);
 try {
   ConfigResponse response = helpers.LoadConfig(request);
 } catch (ApiException ex) {
@@ -51,10 +50,8 @@ try {
 Bạn sử dụng phương thức ``LoadAllConfig`` để lấy tất cả dữ liệu Config
 
 ```C#
-string gameId = '1';
-ConfigRequest request = new ConfigRequest(gameId);
 try {
-  List<ConfigResponse> response = helpers.LoadAllConfig(request);
+  List<ConfigResponse> response = helpers.LoadAllConfig();
 } catch (ApiException ex) {
   Debug.Log(ex);
 }
@@ -67,10 +64,8 @@ Bạn sử dụng phương thức ``LoadUserData`` để
 lấy dữ liệu User.
 
 ```C#
-string gameId = '1';
-string userId = '1';
 string key = 'Arena';
-UserDataRequest request = new UserDataRequest(userId, gameId, key);
+UserDataRequest request = new UserDataRequest(key);
 try {
   UserDataResponse response = helpers.LoadUserData(request);
 } catch (ApiException ex) {
@@ -84,12 +79,13 @@ Bạn sử dụng phương thức ``LoadAllUserData`` để
 lấy tất cả dữ liệu của 1 User.
 
 ```C#
-string gameId = '1';
-string userId = '1';
-UserDataRequest request = new UserDataRequest(userId, gameId);
 try {
-  List<UserDataResponse> response = helpers.LoadUserData(request);
+  List<UserDataResponse> response = helpers.LoadAllUserData();
 } catch (ApiException ex) {
   Debug.Log(ex);
 }
 ```
+
+### Chú ý
+
+Kết quả nhận về là 1 url chứa 1 chuỗi trinh đã được nén. Vì vậy phải dùng hàm Decompress trong DataHelpers để giải nén.

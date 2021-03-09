@@ -36,11 +36,9 @@ Bạn sử dụng phương thức ``SaveOrUpdateUserData`` để
  lưu trữ dữ liệu người chơi
 
 ```C#
-string gameId = '1';
-string userId = '1';
 string key = 'Arena';
 string value = '{\'Key\':\'ABC\',\'Value\':\'123456\'}';
-UserDataRequest request = new UserDataRequest(userId, gameId, key, value);
+UserDataRequest request = new UserDataRequest(key, value);
 try {
   UserDataResponse response = helpers.SaveOrUpdateUserData(request);
 } catch (ApiException ex) {
